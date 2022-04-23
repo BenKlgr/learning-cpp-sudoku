@@ -8,7 +8,7 @@
       "args": [
         "-fdiagnostics-color=always",
         "-g",
-        "${file}",
+        "$(find ${fileDirname} -type f -iregex \".*\\.cpp\")",
         "-o",
         "${fileDirname}/out/${fileBasenameNoExtension}"
       ],
